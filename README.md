@@ -7,7 +7,7 @@
 1. Implementar mecanismo de autenticación vía JWT, con OAUT 2
 
     #### Api LOGIN REQUEST
-        - curl --location --request POST 'localhost:8080/oauth/token' \
+        - curl --location --request POST 'http://127.0.0.1:8080/oauth/token' \
         - Autorization:
             - username: BancaMifel
             - pass: bancamifelpass
@@ -56,7 +56,7 @@ autenticación:
 - Codificación
 
 ### Servicio de Items 
-- 192.168.1.74:8080/api/items
+- http://127.0.0.1:8080/api/items
 - GET
 - Respuesta:
 ~~~
@@ -90,7 +90,7 @@ autenticación:
     }
 ]
 ~~~
-- 192.168.1.74:8080/api/items?nombre=MACBOOK
+- http://127.0.0.1:8080/api/items?nombre=MACBOOK
 - GET
 ~~~
 [
@@ -106,7 +106,7 @@ autenticación:
 ]
 ~~~
 
-- 192.168.1.74:8080/api/items/1
+- http://127.0.0.1:8080/api/items/1
 - DELETE
 - Respuesta Admin:
 ~~~
@@ -124,7 +124,7 @@ autenticación:
 --- 
 ### Servicio de consulta POKEAPI
 
-- 192.168.1.74:8080/api/pokemonDitto
+- http://127.0.0.1:8080/api/pokemonDitto
 - GET
 - Respuesta: 
 ~~~
@@ -189,7 +189,7 @@ autenticación:
 --- 
 ### Servicio de consulta Codifiación "AES/CBC/PKCS5Padding"
 
-- 192.168.1.74:8080/api/codificar?cadena=holamundo
+- http://127.0.0.1:8080/api/codificar?cadena=holamundo
 - GET
 - Respuesta:
 ~~~
